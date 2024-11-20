@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "cytoscape": "^3.30.3"
-  }
-}
