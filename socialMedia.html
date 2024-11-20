@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Visualization</title>
+    <style>
+        #cy {
+            width: 100%;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Social Media Graph:</h1>
+    <div>
+        <p>Color Nodes By:</p>
+        <label>
+            <input type="checkbox" id="followsColorCheckbox" value="folRatioSize"> Total Followers
+        </label>
+        <label>
+            <input type="checkbox" id="viewsColorCheckbox" value="viewsSize"> Total Post Views
+        </label>
+        <label>
+            <input type="checkbox" id="viewsperpostColorCheckbox" value="viewsperpostSize"> Total Views PER Post
+        </label>
+        <label>
+            <input type="checkbox" id="binarygenderRatioColorCheckbox" value="genderRatioSize"> Male to Female Viewer Ratio
+        </label>
+        <label>
+            <input type="checkbox" id="binarytonbgenderRatioColorCheckbox" value="genderRatioSize"> Gender Binary Viewer to Non-Binary Viewer Ratio
+        </label><br>
+        <p>Size Nodes By:</p>
+        <label>
+            <input type="checkbox" id="followsSizeCheckbox" value="folRatioSize"> Total Followers
+        </label>
+        <label>
+            <input type="checkbox" id="viewsSizeCheckbox" value="viewsSize"> Total Post Views
+        </label>
+        <label>
+            <input type="checkbox" id="viewsperpostSizeCheckbox" value="viewsperpostSize"> Total Views PER Post
+        </label>
+        <label>
+            <input type="checkbox" id="binarygenderRatioSizeCheckbox" value="genderRatioSize"> Male to Female Viewer Ratio
+        </label>
+        <label>
+            <input type="checkbox" id="binarytonbgenderRatioSizeCheckbox" value="genderRatioSize"> Gender Binary Viewer to Non-Binary Viewer Ratio
+        </label><br>
+        
+
+
+
+
+        <button id="applySettings">Apply Setting</button>
+    </div>
+    <div id="cy" style="width: 100%; height: 90vh;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"></script>
+    <script src="./graph.js"></script>
+</body>
+</html>
